@@ -59,10 +59,10 @@
     "height":"31px"
   },
   "theme": {
-    "bodyBackground": "#0db2e0",
-    "headerBackground": "#0db2e0",
-    "menuBackground": "#0db2e0",
-    "activeLayer": "#33b560",
+    "bodyBackground": "#252c61",
+    "headerBackground": "#252c61",
+    "menuBackground": "#252c61",
+    "activeLayer": "#80b0de",
     "textMenu":"white",
     "textMenuStyle":"",
     "textLegendMenu":"#fafafa",
@@ -79,7 +79,7 @@
     "miniHeight": "",
     "miniWidth": "",
     "ministyle": "filter: drop-shadow(1px 1px 1px #103847); width: 128px;",
-    "link": "https://github.com/ign-argentina/argenmap"
+    "link": "https://www.santacruz.gob.ar/"
   },
   "logoText": {
     "content": "Lorem Ipsum",
