@@ -113,7 +113,27 @@
       "version": "1.3.0",
       "host": "https://wms.ign.gob.ar/geoserver/modelos-digitales-elevaciones/wms"
     },
-    
+   {
+      "type": "group",
+      "name": "SITU Santa Cruz - Mis Capas", // Nombre de la sección en el panel lateral
+      "visible": true, // Indica si la sección es visible por defecto
+      "items": [
+        {
+          "type": "geojson", // Tipo de capa: GeoJSON
+          "name": "Obras SC (GeoJSON Externo)", // Nombre que aparecerá en el panel de capas
+          "url": "https://raw.githubusercontent.com/IDESANTACRUZ/geoserver/refs/heads/main/obras.geojson", // URL del archivo GeoJSON
+          "visible": false, // La capa no estará visible por defecto al cargar el mapa
+          "style": { // Estilos para la visualización de las geometrías GeoJSON
+            "color": "#007bff", // Color del borde (azul)
+            "weight": 2,       // Grosor del borde
+            "opacity": 0.8,    // Opacidad del borde
+            "fillColor": "#007bff", // Color de relleno (azul)
+            "fillOpacity": 0.2 // Opacidad del relleno
+          },
+          "popup": { // Configuración del popup al hacer clic en una geometría
+            "template": "<b>Obra:</b> {{nombre_obra}}<br><b>Estado:</b> {{estado}}" // Plantilla del contenido del popup, usando propiedades del GeoJSON
+          }
+        } 
   ],
   "template": "ign-geoportal-basic"
 }
