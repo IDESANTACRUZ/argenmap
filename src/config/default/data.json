@@ -113,57 +113,7 @@
       "version": "1.3.0",
       "host": "https://wms.ign.gob.ar/geoserver/modelos-digitales-elevaciones/wms"
     },
-    // --- INICIO DEL CÓDIGO RECOMENDADO PARA TUS NUEVAS CAPAS ---
-    {
-      "type": "group",
-      "name": "SITU Santa Cruz - Mis Capas",
-      "visible": true,
-      "items": [
-        {
-          "type": "geojson",
-          "name": "Departamentos SC (GeoJSON Externo)",
-          "url": "https://raw.githubusercontent.com/IDESANTACRUZ/argenmap/main/data/departamentos_santacruz.geojson",
-          "visible": false,
-          "style": { "color": "#007bff", "weight": 2, "opacity": 0.8, "fillColor": "#007bff", "fillOpacity": 0.2 },
-          "popup": { "template": "<b>Departamento:</b> {{nombre}}" }
-        },
-        {
-          "type": "wms",
-          "name": "Red Vial Provincial (SITU)",
-          "url": "http://situ.santacruz.gob.ar/geoserver/ows?",
-          "layers": "sc:red_vial_provincial", // Nombre de la capa en el GeoServer de SITU
-          "format": "image/png",
-          "transparent": true,
-          "version": "1.1.0",
-          "attribution": "SITU Santa Cruz - Red Vial Provincial",
-          "visible": true
-        },
-        {
-          "type": "wfs",
-          "name": "Localidades SITU (WFS)",
-          "url": "http://situ.santacruz.gob.ar/geoserver/ows?",
-          "typeName": "sc:localidades", // Nombre de la capa en el GeoServer de SITU
-          "outputFormat": "application/json",
-          "attribution": "SITU Santa Cruz - Localidades",
-          "visible": false,
-          "popup": { "template": "<b>Localidad:</b> {{nombre}}" },
-          "style": {
-            "pointToLayer": {
-              "type": "circleMarker",
-              "options": {
-                "radius": 6,
-                "fillColor": "#ff7800",
-                "color": "#000",
-                "weight": 1,
-                "opacity": 1,
-                "fillOpacity": 0.8
-              }
-            }
-          }
-        }
-      ]
-    }
-    // --- FIN DEL CÓDIGO RECOMENDADO ---
+    
   ],
   "template": "ign-geoportal-basic"
 }
