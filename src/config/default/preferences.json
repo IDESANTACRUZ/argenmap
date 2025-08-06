@@ -70,7 +70,7 @@
     "iconBar":"#4f4f4f"
     },
   "logo": {
-    "title":"Argenmap viewer",
+    "title":"IDE",
     "src": "src/styles/images/argenmap-banner-white.webp",
     "height": "",
     "width": "",
