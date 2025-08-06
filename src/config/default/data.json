@@ -113,8 +113,7 @@
       "version": "1.3.0",
       "host": "https://wms.ign.gob.ar/geoserver/modelos-digitales-elevaciones/wms"
      },
-    // --- INICIO DEL CÓDIGO PARA TU NUEVA CAPA GEOJSON: Obras SC ---
-    {
+    { // ¡IMPORTANTE! Asegúrate de que haya una COMA antes de este bloque si no es el primer item del array 'items'
       "type": "geojson", // Tipo de capa: GeoJSON (argenmap lo soporta directamente)
       "name": "Obras SC (GeoJSON Externo)", // Nombre que aparecerá en el panel de capas
       "url": "https://raw.githubusercontent.com/IDESANTACRUZ/geoserver/refs/heads/main/obras.geojson", // URL del archivo GeoJSON
@@ -132,7 +131,6 @@
       },
       "seccion": "obras-santacruz" // Nueva sección para esta capa GeoJSON en el panel lateral
     }
-    // --- FIN DEL CÓDIGO PARA TU NUEVA CAPA GEOJSON ---
   ],
   "template": "ign-geoportal-basic"
 }
