@@ -112,25 +112,7 @@
       "servicio": "wms",
       "version": "1.3.0",
       "host": "https://wms.ign.gob.ar/geoserver/modelos-digitales-elevaciones/wms"
-     },
-    { // ¡IMPORTANTE! Asegúrate de que haya una COMA antes de este bloque si no es el primer item del array 'items'
-      "type": "geojson", // Tipo de capa: GeoJSON (argenmap lo soporta directamente)
-      "name": "Obras SC (GeoJSON Externo)", // Nombre que aparecerá en el panel de capas
-      "url": "https://raw.githubusercontent.com/IDESANTACRUZ/geoserver/refs/heads/main/obras.geojson", // URL del archivo GeoJSON
-      "visible": false, // La capa no estará visible por defecto al cargar el mapa
-      "peso": 130, // Peso para ordenar la capa en el panel (después de "mde" que tiene 120)
-      "style": { // Estilos para la visualización de las geometrías GeoJSON
-        "color": "#007bff", // Color del borde (azul)
-        "weight": 2,       // Grosor del borde
-        "opacity": 0.8,    // Opacidad del borde
-        "fillColor": "#007bff", // Color de relleno (azul)
-        "fillOpacity": 0.2 // Opacidad del relleno
-      },
-      "popup": { // Configuración del popup al hacer clic en una geometría
-        "template": "<b>Obra:</b> {{nombre}}<br><b>Estado:</b> {{estado}}" // Plantilla del contenido del popup, usando las propiedades 'nombre' y 'estado' de tu GeoJSON
-      },
-      "seccion": "obras-santacruz" // Nueva sección para esta capa GeoJSON en el panel lateral
-    }
+     }
   ],
   "template": "ign-geoportal-basic"
 }
