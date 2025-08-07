@@ -112,7 +112,24 @@
       "servicio": "wms",
       "version": "1.3.0",
       "host": "https://wms.ign.gob.ar/geoserver/modelos-digitales-elevaciones/wms"
-     }
+},
+    { // INICIO DEL CÓDIGO PARA LA NUEVA CAPA WMS: Aeropuertos de SITU Santa Cruz
+      "type": "wmslayer", // Tipo de capa: wmslayer para un servicio WMS
+      "peso": 130, // Peso para ordenar la capa en el panel (después de "mde" que tiene 120)
+      "nombre": "Aeropuertos SITU SC", // Nombre que aparecerá en el panel de capas
+      "short_abstract": "Capa de aeropuertos de la provincia de Santa Cruz (SITU).",
+      "class": "",
+      "seccion": "transporte-situ", // Nueva sección para capas de transporte del SITU
+      "servicio": "wms", // Tipo de servicio: WMS
+      "version": "1.1.0", // Versión del servicio WMS
+      "host": "https://situ.santacruz.gob.ar/geoserver/ss_transp/wms?", // URL base del servicio WMS de transporte de SITU
+      "layers": "ss_transp:aeropuertos", // Nombre específico de la capa de aeropuertos en el servicio
+      "format": "image/png", // Formato de la imagen de la capa
+      "transparent": true, // Fondo transparente para la capa
+      "attribution": "SITU Santa Cruz - Aeropuertos", // Atribución de la capa
+      "visible": false // La capa no estará visible por defecto al cargar el mapa
+    }
+    // FIN DEL CÓDIGO PARA LA NUEVA CAPA WMS
   ],
   "template": "ign-geoportal-basic"
 }
